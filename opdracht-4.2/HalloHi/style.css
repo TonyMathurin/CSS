@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f4f5fa;
+    color: #111;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    position: relative;
+    height: 70px;
+    background: #7272dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 0 30px;
+    z-index: 10;
+}
+
+.brand {
+    position: absolute;
+    left: 45px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.brand img {
+    width: 42px;
+    height: 42px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* SERVICE DROPDOWN */
+
+.service-menu {
+    position: absolute;
+    right: 135px;
+    top: 70px;
+    width: 160px;
+    padding: 12px;
+    background: #7272dd;
+    border-radius: 0 0 22px 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+.service-menu p {
+    margin: 0 0 7px;
+    font-size: 12px;
+}
+
+.service-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 400px;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 65px;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 510px;
+    z-index: 2;
+}
+
+.small-lines {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.small-lines span {
+    width: 11px;
+    height: 4px;
+    background: #9000ff;
+}
+
+.small-lines span:nth-child(2) {
+    background: #55559f;
+}
+
+.small-lines span:nth-child(3) {
+    background: #b0b0eb;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0 0 12px;
+}
+
+.hero h1 span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #31e7ba;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 19px;
+    color: #31e7ba;
+    vertical-align: middle;
+}
+
+.hero p {
+    line-height: 1.45;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 23px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.outline {
+    border: 1px solid white;
+}
+
+.purple {
+    background: #9000ff;
+}
+
+.black {
+    background: #000;
+}
+
+
+/* HERO ART */
+
+.hero-art {
+    position: relative;
+    width: 370px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -45px;
+    top: -95px;
+    background: #7272dd;
+    border-radius: 50%;
+}
+
+.phone {
+    position: relative;
+    width: 130px;
+    height: 250px;
+    background: #55559f;
+    border: 5px solid #55559f;
+    border-radius: 18px;
+    transform: rotate(5deg);
+    z-index: 2;
+    box-shadow: 0 12px 25px rgba(255,255,255,.18);
+}
+
+.phone-screen {
+    position: absolute;
+    inset: 5px;
+    background: linear-gradient(145deg, #31e7ba, #7272dd 40%, #111);
+    border-radius: 13px;
+}
+
+.phone img {
+    position: absolute;
+    width: 48px;
+    height: auto;
+    right: -15px;
+    bottom: -15px;
+    z-index: 4;
+    transform: rotate(-5deg);
+}
+
+.deal {
+    position: absolute;
+    left: 35px;
+    bottom: 40px;
+    width: 70px;
+    height: 70px;
+    background: #9000ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.1;
+    transform: rotate(-10deg);
+    z-index: 5;
+}
+
+
+/* MOBILE + TV */
+
+.mobile-tv {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 65px 70px;
+    background: #f4f5fa;
+}
+
+.content {
+    max-width: 520px;
+}
+
+.content h2 {
+    font-size: 31px;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.content p {
+    line-height: 1.35;
+    font-size: 14px;
+}
+
+.content ul {
+    padding-left: 18px;
+    line-height: 1.45;
+    font-size: 14px;
+}
+
+.section-image {
+    width: 330px;
+    height: 250px;
+    background: #9000ff;
+    border-radius: 27px;
+    padding: 10px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.section-image::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    bottom: -16px;
+    width: 100%;
+    height: 100%;
+    background: #7272dd;
+    border-radius: 27px;
+    z-index: 0;
+}
+
+.section-image img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 22px;
+}
+
+
+/* FOOTER */
+
+footer {
+    min-height: 100px;
+    background: linear-gradient(90deg, #9000ff, #a000ff);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 65px;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.stores {
+    display: flex;
+    gap: 15px;
+}
+
+.stores a {
+    border: 1px solid white;
+    padding: 9px 18px;
+    border-radius: 4px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 18px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .brand {
+        position: static;
+    }
+
+    .nav-links {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-menu {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 45px 25px;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-art {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .mobile-tv {
+        flex-direction: column;
+        padding: 50px 25px;
+        gap: 40px;
+    }
+
+    .section-image {
+        width: min(330px, 90vw);
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
