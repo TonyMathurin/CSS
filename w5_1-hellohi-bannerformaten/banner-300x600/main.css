@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.stage {  
+    position: relative;
+    cursor: pointer;
+    
+    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;    
+   overflow: hidden;    
+}
+
+.bannerSize{ 
+width: 300px; 
+height: 600px; 
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 500px;
+
+}
+
+h2{
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+p{
+    margin-top: -10px;
+        font-size: large;
+}
+ul{
+    font-size: 20px;
+    position: absolute;
+    bottom: 230px;
+    left: -30px;
+}
+.hipng{
+    height: 40px;
+    width: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -5px;
+}
+body{
+    width: 300px;
+    height: 250px;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    color:white;
+}
+
+#simkart{
+    position: absolute;
+    left: 30px;
+    width: 100px;
+    margin-top: -20px;
+    transform: rotate(90deg);
+}
+
+.buton1{
+    font-size: medium;
+    border-radius: 10px;
+    color: white;
+    width: 190px;
+    background-color: #7272dd;
+    border-color: white;
+    margin-left: 60px;
+    text-shadow: none;
+    box-shadow: none;
+    border: 2px white solid;
+    padding: 15px;
+    position: absolute;
+    bottom: 50px;
+    margin-left: 50px;
+
+}
+
+.circle{
+    background-color: #7272dd;
+    width: 350px;
+    height: 350px;
+    border-radius: 9999px;
+    margin-left: -25px;
+    margin-top: 270px;
+}
+
+#kare1{
+    width: 15px;
+    height: 5px;
+    background-color: #920de6;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+#kare2{
+    width: 15px;
+    height: 5px;
+    background-color: #605b9f;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+#kare3{
+    width: 15px;
+    height: 5px;
+    background-color: #c1bff0;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
