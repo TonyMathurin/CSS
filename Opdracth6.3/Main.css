@@ -1,0 +1,111 @@
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 90px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Logo gets 25% of the navbar */
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation gets 50% of the navbar */
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+/* Login gets 25% of the navbar */
+.login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Link styling */
+.navbar a {
+    color: #0000ff;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: #ff5722;
+}
+
+/* Main content */
+main {
+    padding: 40px;
+}
+
+main h1 {
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+main p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Responsive styling for phones */
+@media (max-width: 700px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .login {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .nav-links {
+        flex: 0 0 100%;
+        order: 3;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 17px;
+    }
+}
